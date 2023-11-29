@@ -35,10 +35,10 @@ func main() {
 		conn.Write([]byte(text))
 
 		// On écoute tous les messages émis par le serveur et on rajouter un retour à la ligne
-		message, err := bufio.NewReader(conn).ReadString('\n')
+		// message, err := bufio.NewReader(conn).ReadString('\n')
 		gestionErreur(err)
 
 		// on affiche le message utilisateur
-		fmt.Print("serveur : " + message)
+		// fmt.Print("serveur : " + message)
 	}
 }

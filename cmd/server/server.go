@@ -41,6 +41,6 @@ func main() {
 		fmt.Print("Client:", message)
 
 		// On envoie le message au client pour qu'il l'affiche
-		conn.Write([]byte(message + "\n"))
+		conn.Write([]byte("Le serveur te dit : " + message + "\n"))
 	}
 }
